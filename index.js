@@ -384,7 +384,7 @@ class SortableListView extends React.Component {
       if (Platform.OS === 'ios') {
         // TODO: Fix for Android and Windows https://github.com/facebook/react-native/issues/13207
         // LayoutAnimation is not supported in react-native-web
-        LayoutAnimation && LayoutAnimation.easeInEaseOut()
+        // LayoutAnimation && LayoutAnimation.easeInEaseOut()
       }
       this._previouslyHovering = this.state.hovering
       this.__activeY = this.panY
@@ -400,7 +400,7 @@ class SortableListView extends React.Component {
     if (Platform.OS === 'ios') {
       // TODO: Fix for Android and Windows https://github.com/facebook/react-native/issues/13207
       // LayoutAnimation is not supported in react-native-web
-      LayoutAnimation && LayoutAnimation.easeInEaseOut()
+      // LayoutAnimation && LayoutAnimation.easeInEaseOut()
     }
     this.moveY = row.layout.pageY + row.layout.frameHeight / 2
     this.setState(
